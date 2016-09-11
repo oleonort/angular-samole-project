@@ -1,6 +1,6 @@
 ## angular-test-project
 
-This is to train in AngularJS
+This is AngularJS 1.X test project
 
 ## To start
 
