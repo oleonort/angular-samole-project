@@ -1,0 +1,10 @@
+<div class="main-menu sidebar-nav">
+    <div class="category" ng-repeat="category in $ctrl.menuCategories">
+        <h5 class="category-title">{{category.title | uppercase}}</h5>
+        <ul class="items nav nav-pills nav-stacked">
+            <li class="item" ng-class="$ctrl.itemActiveClass('{{categoryItem.id}}')" ng-repeat="categoryItem in category.items">
+                <a  href="#/{{categoryItem.id}}">{{categoryItem.title}}</a>
+            </li>
+        </ul>
+    </div>
+</div>

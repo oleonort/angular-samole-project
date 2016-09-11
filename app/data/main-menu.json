@@ -1,0 +1,43 @@
+[{
+  "title": "engage",
+  "items": [
+    {
+      "title": "Compaigns",
+      "id": "compaigns"
+    }, {
+      "title": "People",
+      "id": "people"
+    }, {
+      "title": "+ New Segment",
+      "id": "new-segment"
+    }
+  ]
+}, {
+  "title": "converse",
+  "items": [
+    {
+      "title": "Conversations",
+      "id": "conversations"
+    }, {
+      "title": "Conversation Statistics",
+      "id": "conversation-statistics"
+    }, {
+      "title": "+ New Conversation",
+      "id": "new-conversation"
+    }
+  ]
+}, {
+  "title": "locate",
+  "items": [
+    {
+      "title": "Geofences",
+      "id": "geofences"
+    }, {
+      "title": "Beacons",
+      "id": "beacons"
+    }, {
+      "title": "Location Statistics",
+      "id": "location-statistics"
+    }
+  ]
+}]

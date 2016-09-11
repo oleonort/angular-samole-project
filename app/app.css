@@ -1,0 +1,175 @@
+@font-face {
+    font-family: proximanovaFontReg;
+    src: url(fonts/proximanova-regular-webfont.ttf);
+}
+
+@font-face {
+    font-family: proximanovaFontSemiBold;
+    src: url(fonts/proximanova-semibold-webfont.ttf);
+}
+
+@font-face {
+    font-family: proximanovaFontBold;
+    src: url(fonts/proximanova-bold-webfont.ttf);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: proximanovaFontBold;
+}
+
+.glyphicon.glyphicon-one-dot:before {
+    content: "\25cf";
+    font-size: 1.3em;
+    color: #99E072;
+}
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.app {
+    font-family: proximanovaFontSemiBold;
+}
+
+.not-ready-yet {
+    padding: 20px;
+}
+
+header {
+    background: #2A73D5;
+    height: 60px;
+    color: #ffffff;
+    min-width: 500px;
+    font-family: proximanovaFontSemiBold;
+}
+
+header .logo {
+    width: 110px;
+    height: 60px;
+    vertical-align: text-top;
+    margin-left: 30px;
+}
+
+header user-info {
+    float: right;
+    min-width: 300px;
+    height: inherit;
+    padding-top: 8px;
+}
+
+header user-info .user-icon {
+    float: left;
+    height: 40px;
+    width: 40px;
+    background: #B499DF;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 11px;
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+header user-info .user-info {
+    float: left;
+}
+
+header user-info .user-name {
+    font-size: 18px;
+}
+
+header user-info .user-type {
+    color: #97B3E6;
+    font-size: 16px;
+}
+
+header user-info .user-type span {
+    margin-top: -5px;
+}
+
+
+header user-info .system-icons {
+    padding: 10px 0 0 20px;
+    float: left;
+    cursor: pointer;
+}
+
+header user-info .system-icons span.icon {
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+header user-info .system-icons span.icon:hover {
+    color: #22A1EC;
+}
+
+.wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.sidebar-wrapper {
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    width: 0;
+    top: 60px;
+    bottom: 0;
+    margin-left: -240px;
+    background: #222228;
+    overflow-y: auto;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.wrapper.toggled .sidebar-wrapper {
+    width: 240px;
+}
+
+.page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 20px;
+}
+
+.wrapper.toggled .page-content-wrapper {
+    position: absolute;
+    margin-right: -240px;
+}
+
+@media(min-width:960px) {
+    .wrapper {
+        padding-left: 240px;
+    }
+
+    .wrapper.toggled {
+        padding-left: 0;
+    }
+
+    .sidebar-wrapper {
+        width: 240px;
+        left: 240px;
+    }
+
+    .wrapper.toggled .sidebar-wrapper {
+        width: 0;
+    }
+
+    .page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    .wrapper.toggled .page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+

@@ -1,0 +1,13 @@
+[{
+  "title": "Push Notification",
+  "id": "push-notification"
+}, {
+  "title": "In-App Notification",
+  "id": "in-app-notification"
+}, {
+  "title": "Multi-Channel",
+  "id": "multi-channel"
+}, {
+  "title": "Email",
+  "id": "email"
+}]

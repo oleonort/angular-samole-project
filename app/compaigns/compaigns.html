@@ -1,0 +1,7 @@
+<ul class="nav nav-tabs">
+    <li class="compaign-menu-item" ng-class="$ctrl.itemActiveClass('{{item.id}}')" ng-repeat="item in $ctrl.menuItems">
+        <a ui-sref=".{{item.id}}" class="glyphicon-envelope">{{item.title}}</a>
+    </li>
+</ul>
+
+<div ui-view></div>
