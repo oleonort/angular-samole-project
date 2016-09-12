@@ -109,4 +109,28 @@ compaigns-emails .overalls .overall-item-info {
 compaigns-emails .action-menu {
     background: #F4F5F7;
     border-bottom: 2px solid #D0D5D8;
+    height: 70px;
+}
+
+compaigns-emails .action-menu .main-checkbox {
+    margin: 22px 0 0 30px;
+    float: left;
+}
+
+compaigns-emails .action-menu .search {
+    border-radius: 4px;
+    border: 2px solid #D0D5D8;
+    width: 40px;
+    height: 40px;
+    float: left;
+    background: #FFFFFF;
+    margin: 12px 10px 0 20px;
+    font-size: 18px;
+    color: #404040;
+}
+
+compaigns-emails .action-menu .search:before {
+    position: absolute;
+    top: 8px;
+    left: 7px;
 }
