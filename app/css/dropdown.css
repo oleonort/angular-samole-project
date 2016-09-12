@@ -6,3 +6,31 @@
     border: 2px solid #D0D5D8;
     height: 40px;
 }
+
+.dropdown .option-badge {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 5px -3px 0;
+    border-radius: 4px;
+}
+
+.dropdown .option-badge.lite-green {
+    background: #2AD59F;
+}
+
+.dropdown .option-badge.blue {
+    background: #2A73D5;
+}
+
+.dropdown .option-badge.orange {
+    background: #F4A34C;
+}
+
+.dropdown .option-badge.light-red {
+    background: #F44C70;
+}
+
+.dropdown .option-badge.light-grey {
+    background: #A6AEB3;
+}
