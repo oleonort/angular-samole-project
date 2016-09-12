@@ -3,7 +3,7 @@
 // Define the `mainMenuComponent` module
 angular.module('mainMenu')
     .component('mainMenu', {
-        templateUrl: 'main-menu/main-menu.html',
+        templateUrl: 'components/main-menu/main-menu.html',
         controller: ['$http', '$location',
             function MainMenuController($http, $location) {
                 $http.get('data/main-menu.json').then(function(response) {

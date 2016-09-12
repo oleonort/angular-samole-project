@@ -1,6 +1,6 @@
-## angular-test-project
+## angular-sample-project
 
-This is AngularJS 1.X test project
+This is AngularJS 1.X sample project
 
 ## To start
 

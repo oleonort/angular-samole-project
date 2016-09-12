@@ -1,13 +1,17 @@
 [{
   "title": "Push Notification",
+  "icon": "glyphicon-list-alt",
   "id": "push-notification"
 }, {
   "title": "In-App Notification",
+  "icon":  "glyphicon-comment",
   "id": "in-app-notification"
 }, {
   "title": "Multi-Channel",
+  "icon": "glyphicon-signal",
   "id": "multi-channel"
 }, {
   "title": "Email",
+  "icon": "glyphicon-envelope",
   "id": "email"
 }]

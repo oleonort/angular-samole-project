@@ -1,0 +1,73 @@
+compaigns-component .nav-tabs {
+    padding: 20px 20px 0 20px;
+    border-bottom: 2px solid #D0D5D8;
+    background: #DBDFE4;
+}
+
+compaigns-component .nav-tabs > li {
+    margin: 0 5px;
+    background: #EDEFF2;
+    border-radius: 4px 4px 0 0;
+    border: none;
+}
+
+compaigns-component .nav-tabs > li a {
+    color: #ADAEB0;
+    display: inline-block;
+    padding: 6px 15px 2px;
+}
+
+compaigns-component .nav-tabs > li a:hover {
+    color: #2A73D5;
+}
+
+compaigns-component .nav-tabs > li a:hover {
+    border-color: transparent;
+}
+
+compaigns-component .nav-tabs > li:first-child {
+    margin-left: 15px;
+}
+
+compaigns-component .nav-tabs > li.active a,
+compaigns-component .nav-tabs > li.active > a:hover,
+compaigns-component .nav-tabs > li.active > a:focus {
+    border: 1px solid transparent;
+    color: #2A73D5;
+}
+
+compaigns-component .nav-tabs > li a .tab-title {
+    float: left;
+    padding-top: 5px;
+}
+
+compaigns-component .nav-tabs > li a .tab-icon {
+    float: left;
+    height: 26px;
+    width: 26px;
+    background: #C9CED2;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 6px;
+    margin-right: 5px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+compaigns-component .nav-tabs > li.active a .tab-icon,
+compaigns-component .nav-tabs > li a:hover .tab-icon {
+    background: #2A73D5;
+}
+
+compaigns-component .nav-tabs > li.active,
+compaigns-component .nav-tabs > li.active,
+compaigns-component .nav-tabs > li.active {
+    background: #FFFFFF;
+    border-bottom: 2px solid transparent;
+    margin-bottom: -2px;
+}
+
+compaigns-component compaigns-emails {
+    display: block;
+    background: #FFFFFF;
+}

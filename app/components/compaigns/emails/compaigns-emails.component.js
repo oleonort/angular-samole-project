@@ -3,5 +3,5 @@
 // Define the `compaignsEmailsComponent` module
 angular.module('compaignsEmails')
     .component('compaignsEmails', {
-        templateUrl: 'compaigns/emails/compaigns-emails.html'
+        templateUrl: 'components/compaigns/emails/compaigns-emails.html'
     });
