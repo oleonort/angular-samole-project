@@ -1,0 +1,14 @@
+<div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        {{$ctrl.dropdownData.initValue}}
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
+        <li><a ng-repeat="item in $ctrl.dropdownData.items">
+            <span ng-show="{{!!item.badge}}" class="option-badge {{item.badge}}"></span>
+            <span class="option-title">{{item.title}}</span>
+        </a></li>
+        <li ng-if="!!$ctrl.dropdownData.separatedItem"> role="separator" class="divider"></li>
+        <li ng-if="!!$ctrl.dropdownData.separatedItem"><a>{{$ctrl.dropdownData.separatedItem}}</a></li>
+    </ul>
+</div>

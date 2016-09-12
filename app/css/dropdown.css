@@ -1,0 +1,8 @@
+.dropdown {
+    float: left;
+}
+
+.dropdown .btn-default {
+    border: 2px solid #D0D5D8;
+    height: 40px;
+}

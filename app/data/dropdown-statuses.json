@@ -1,0 +1,21 @@
+{
+  "initValue": "Statuses",
+  "items": [{
+    "title": "All"
+  }, {
+    "title": "Active",
+    "badge": "lite-green"
+  }, {
+    "title": "Delivered",
+    "badge": "blue"
+  }, {
+    "title": "Scheduled",
+    "badge": "orange"
+  }, {
+    "title": "Paused",
+    "badge": "light-red"
+  }, {
+    "title": "Draft",
+    "badge": "light-grey"
+  }]
+}

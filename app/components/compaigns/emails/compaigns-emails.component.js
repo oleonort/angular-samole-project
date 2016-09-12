@@ -9,6 +9,14 @@ angular.module('compaignsEmails')
                 $http.get('data/compaigns-email.json').then(function(response) {
                     this.overalls = response.data.overalls;
                 }.bind(this));
+
+                $http.get('data/dropdown-groups.json').then(function(response) {
+                    this.groupDropdownData = response.data;
+                }.bind(this));
+
+                $http.get('data/dropdown-statuses.json').then(function(response) {
+                    this.statusesDropdownData = response.data;
+                }.bind(this));
             }
         ]
     });

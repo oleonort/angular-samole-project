@@ -1,0 +1,21 @@
+{
+  "initValue": "Groups",
+  "items": [{
+    "title": "All"
+  }, {
+    "title": "Weekend Deals"
+  }, {
+    "title": "Offers"
+  }, {
+    "title": "Nearby Promos"
+  }, {
+    "title": "Events"
+  }, {
+    "title": "Competitions"
+  }, {
+    "title": "Onboarding"
+  }, {
+    "title": "New Products"
+  }],
+  "separatedItem": "Create New Group"
+}

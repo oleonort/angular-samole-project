@@ -1,4 +1,6 @@
 'use strict';
 
 // Define the `compaignsEmails` module
-angular.module('compaignsEmails', []);
+angular.module('compaignsEmails', [
+    'customDropdown'
+]);
