@@ -7,7 +7,7 @@ This is AngularJS 1.X sample project
 ### Git
 
 ```
-git clone https://github.com/oleonort/angular-test-project.git
+git clone https://github.com/oleonort/angular-sample-project.git
 ```
 
 ### npm
