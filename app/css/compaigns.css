@@ -70,4 +70,43 @@ compaigns-component .nav-tabs > li.active {
 compaigns-component compaigns-emails {
     display: block;
     background: #FFFFFF;
+    font-family: proximanovaFontReg;
+}
+
+compaigns-emails .overalls {
+    padding: 10px 20px;
+    border-bottom: 2px solid #D0D5D8;
+}
+
+compaigns-emails .overalls .small {
+    font-size: 12px;
+}
+
+compaigns-emails .overalls .large {
+    font-size: 24px;
+}
+
+compaigns-emails .overalls .black {
+    color: #404040;
+}
+
+compaigns-emails .overalls .green {
+    color: #31BC55;
+}
+
+compaigns-emails .email-item {
+    padding: 0 20px 0 40px;
+    margin: 15px 0;
+    color: #A6AEB3;
+}
+
+compaigns-emails .overalls .overall-item-info {
+    float: left;
+    border-right: 1px solid #DDE1E5;
+    line-height: 1.6em;
+}
+
+compaigns-emails .action-menu {
+    background: #F4F5F7;
+    border-bottom: 2px solid #D0D5D8;
 }

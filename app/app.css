@@ -37,6 +37,7 @@ body {
 
 .not-ready-yet {
     padding: 20px;
+    color: #A6AEB3;
 }
 
 header {
@@ -135,7 +136,8 @@ header user-info .system-icons span.icon:hover {
 }
 
 .page-content-wrapper {
-    width: 100%;
+    left: 0;
+    right: 0;
     position: absolute;
     top: 60px;
     bottom: 0;
@@ -167,6 +169,10 @@ header user-info .system-icons span.icon:hover {
     .wrapper.toggled .page-content-wrapper {
         position: relative;
         margin-right: 0;
+    }
+
+    .page-content-wrapper {
+        left: 240px;
     }
 }
 

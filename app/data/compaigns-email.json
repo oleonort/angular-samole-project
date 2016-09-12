@@ -1,0 +1,21 @@
+{
+  "overalls": [{
+    "title": "Overall Conversation Rate",
+    "amount": "312862",
+    "percentage": "22.5%",
+    "precentageInLastWeek": "2.4%"
+  }, {
+    "title": "Overall Email Sends",
+    "amount": "2345670",
+    "precentageInLastWeek": "3.1%"
+  }, {
+    "title": "Overall Email Opens",
+    "amount": "670457",
+    "percentage": "39.4%",
+    "precentageInLastWeek": "4.5%"
+  }, {
+    "title": "Overall Generated Revenues",
+    "amount": "1234567.90",
+    "precentageInLastWeek": "6.7%"
+  }]
+}
