@@ -1,6 +1,7 @@
 'use strict';
 
-// Define the `mainMenuComponent` module
+// Define the `mainMenu` component
+
 angular.module('mainMenu')
     .component('mainMenu', {
         templateUrl: 'components/main-menu/main-menu.html',

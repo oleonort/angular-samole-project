@@ -1,6 +1,7 @@
 'use strict';
 
-// Define the `mainMenuComponent` module
+// Define the `customDropdown` component
+
 angular.module('customDropdown')
     .component('customDropdown', {
         bindings: {

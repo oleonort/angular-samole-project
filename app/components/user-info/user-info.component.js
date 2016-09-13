@@ -1,6 +1,7 @@
 'use strict';
 
 // Define the `userInfo` component
+
 angular.module('userInfo')
     .component('userInfo', {
         templateUrl: 'components/user-info/user-info.html',

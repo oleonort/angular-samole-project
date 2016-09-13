@@ -1,6 +1,6 @@
 'use strict';
 
-// Define the `notReadyYetComponent` module
+// Define the `notReadyYet` component
 angular.module('notReadyYet')
     .component('notReadyYet', {
         templateUrl: 'components/not-ready-yet/not-ready-yet.html'

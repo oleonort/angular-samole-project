@@ -1,6 +1,7 @@
 'use strict';
 
-// Define the `compaignsComponent` module
+// Define the `compaignsComponent` component
+
 angular.module('compaignsModule')
     .component('compaignsComponent', {
         templateUrl: 'components/compaigns/compaigns.html',
