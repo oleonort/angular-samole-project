@@ -2,7 +2,7 @@
     <div class="overall-item-info email-item col-md-3" ng-repeat="overall in $ctrl.overalls">
         <div class="overall-title small inner">{{overall.title}}</div>
         <div class="overall-amount large inner">
-            <span class="black">{{overall.amount | number}} </span>
+            <span class="black">{{overall.amount}} </span>
             <span ng-if="!!overall.percentage">({{overall.percentage}})</span>
         </div>
         <div class="increase small inner">
@@ -30,7 +30,8 @@
             <div class="email-item-icon left">
                 <div class="email glyphicon glyphicon-envelope"></div>
                 <div class="binder"></div>
-                <div class="support-icon glyphicon {{item.icon}}"  data-toggle="tooltip" class="sub-type" title="{{item.iconTooltip}}"></div>
+                <div class="support-icon glyphicon {{item.icon}}" data-toggle="tooltip" class="sub-type"
+                     title="{{item.iconTooltip}}"></div>
             </div>
             <div class="main-info left">
                 <div class="title">
@@ -38,10 +39,12 @@
                     <span class="glyphicon glyphicon-eye-open"></span>
                 </div>
                 <div class="types">
-                    <span class="type" ng-repeat="type in item.types">{{type}}<span ng-if="$index !== item.types.length-1">,</span></span>
+                    <span class="type" ng-repeat="type in item.types">{{type}}<span
+                            ng-if="$index !== item.types.length-1">,</span></span>
                 </div>
                 <div class="details">
-                    <span data-toggle="tooltip" class="sub-type" title="{{item.subTypeTooltip}}"><span class="content">{{item.subType}}</span></span>
+                    <span ng-if="item.subType" data-toggle="tooltip" class="sub-type"
+                          title="{{item.subTypeTooltip}}"><span class="content">{{item.subType}}</span></span>
                     <span class="badge {{item.badge.color}}">{{item.badge.title | uppercase}}</span>
                     <span class="author">{{item.date | date}} - {{item.name}}</span>
                 </div>
@@ -49,17 +52,32 @@
         </div>
         <div class="col-xs-4 second-part">
             <div class="conversion-rate col-xs-4">
-                <div class="amount inner">{{item.conversionRate}}% ({{item.conversionNumber | number}})</div>
-                <div class="inner">Conversion Rate</div>
-                <progress class="inner" value="10" max="100"></progress>
+                <div class="amount" ng-if="item.conversionRate">
+                    <span ng-if="item.conversionRate" class="black">{{item.conversionRate}}%</span>
+                    <span ng-if="item.conversionNumber">({{item.conversionNumber | number}})</span>
+                </div>
+                <div class="amount-empty black" ng-if="!item.conversionRate"> -</div>
+                <div>Conversion Rate</div>
+                <progress ng-if="item.conversionRate" value="{{item.progressValue}}" max="100"></progress>
             </div>
             <div class="email-sends col-xs-4">
-                <div class="amount inner">{{item.emailSends | number}}</div>
-                <div class="inner">Email Sends</div>
+                <div class="amount black" ng-if="item.emailSends">{{item.emailSends | number}}</div>
+                <div class="amount-empty black" ng-if="!item.emailSends"> -</div>
+                <div>
+                    <div>Email</div>
+                    <div>Sends</div>
+                </div>
             </div>
             <div class="email-opens col-xs-4">
-                <div class="amount inner">{{item.emailOpens}}% ({{item.emailOpensNumber | number}})</div>
-                <div class="inner">Email Opens</div>
+                <div class="amount" ng-if="item.emailOpens">
+                    <span ng-if="item.emailOpens" class="black">{{item.emailOpens}}%</span>
+                    <span ng-if="item.emailOpensNumber">({{item.emailOpensNumber | number}})</span>
+                </div>
+                <div class="amount-empty black" ng-if="!item.emailOpens"> -</div>
+                <div>
+                    <div>Email</div>
+                    <div>Opens</div>
+                </div>
             </div>
         </div>
         <div class="col-xs-2 third-part inner">

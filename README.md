@@ -4,14 +4,16 @@ This is AngularJS 1.X sample project
 
 ## To start
 
-### Git
+### Install Git (https://git-scm.com/downloads)
 
+Run
 ```
 git clone https://github.com/oleonort/angular-sample-project.git
 ```
 
-### npm
+### Install Node (https://nodejs.org/en/download/)
 
+Run
 ```
 npm start
 ```

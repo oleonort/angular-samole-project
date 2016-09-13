@@ -178,6 +178,7 @@ compaigns-emails .action-menu .new-campaign span {
 compaigns-emails .email-item-info {
     padding: 20px 10px 20px 20px;
     border-bottom: 2px solid #D0D5D8;
+    height: 126px;
 }
 
 compaigns-emails .email-item-info .email-item-checkbox {
@@ -258,7 +259,7 @@ compaigns-emails .main-info .details .badge {
     border-radius: 5px;
 }
 
-compaigns-emails .main-info .details .badge.lite-green {
+compaigns-emails .main-info .details .badge.light-green {
     background: #2AD59F;
 }
 
@@ -295,25 +296,35 @@ compaigns-emails .email-item-info .second-part .conversion-rate,
 compaigns-emails .email-item-info .second-part .email-sends,
 compaigns-emails .email-item-info .second-part .email-opens {
     border-right: 1px solid #DDE1E5;
-    padding: 22px 0 22px 15px;
+    height: 84px;
+    padding-top: 10px;
+    line-height: 1.3em;
 }
 
 compaigns-emails .email-item-info .third-part {
     padding: 22px 0 22px 15px;
 }
 
-/*compaigns-emails .email-item-info .second-part .conversion-rate progress {*/
-    /*width: 70px;*/
-    /*height: 10px;*/
-    /*border: 2px solid #D0D5D8;*/
-    /*border-radius: 10px;*/
-/*}*/
+compaigns-emails .email-item-info .second-part .conversion-rate .amount span:first-child,
+compaigns-emails .email-item-info .second-part .conversion-rate .amount-empty,
+compaigns-emails .email-item-info .second-part .email-sends .amount,
+compaigns-emails .email-item-info .second-part .email-sends .amount-empty,
+compaigns-emails .email-item-info .second-part .email-opens .amount span:first-child,
+compaigns-emails .email-item-info .second-part .email-opens .amount-empty {
+    font-size: 16px;
+    font-family: proximanovaFontBold;
+}
 
-compaigns-emails .email-item-info .second-part .conversion-rate  progress[value] {
+compaigns-emails .email-item-info .second-part .conversion-rate .amount span:last-child,
+compaigns-emails .email-item-info .second-part .email-opens .amount span:last-child {
+    vertical-align: text-bottom;
+}
+
+compaigns-emails .email-item-info .second-part .conversion-rate progress[value] {
     -webkit-appearance: none;
     appearance: none;
     width: 70px;
-    height: 10px;
+    height: 7px;
 }
 
 compaigns-emails .email-item-info .second-part .conversion-rate progress[value]::-webkit-progress-bar {
@@ -325,4 +336,8 @@ compaigns-emails .email-item-info .second-part .conversion-rate progress[value]:
 compaigns-emails .email-item-info .second-part .conversion-rate progress[value]::-webkit-progress-value {
     border-radius: 10px 0 0 10px;
     background-color: #404040;
+}
+
+compaigns-emails .email-item-info .second-part {
+    text-align: center;
 }

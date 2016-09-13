@@ -1,26 +1,34 @@
 {
   "initValue": "Groups",
-  "items": [{
-    "title": "Weekend Deals",
-    "editable": "true"
-  }, {
-    "title": "Offers",
-    "editable": "true"
-  }, {
-    "title": "Nearby Promos",
-    "editable": "true"
-  }, {
-    "title": "Events",
-    "editable": "true"
-  }, {
-    "title": "Competitions",
-    "editable": "true"
-  }, {
-    "title": "Onboarding",
-    "editable": "true"
-  }, {
-    "title": "New Products",
-    "editable": "true"
-  }],
+  "items": [
+    {
+      "title": "Weekend Deals",
+      "editable": "true"
+    },
+    {
+      "title": "Offers",
+      "editable": "true"
+    },
+    {
+      "title": "Nearby Promos",
+      "editable": "true"
+    },
+    {
+      "title": "Events",
+      "editable": "true"
+    },
+    {
+      "title": "Competitions",
+      "editable": "true"
+    },
+    {
+      "title": "Onboarding",
+      "editable": "true"
+    },
+    {
+      "title": "New Products",
+      "editable": "true"
+    }
+  ],
   "separatedItem": "Create New Group"
 }
