@@ -13,7 +13,9 @@ git clone https://github.com/oleonort/angular-sample-project.git
 
 ### Install Node (https://nodejs.org/en/download/)
 
-Run
+Install bower (npm install -g bower)
+
+In your local project folder run
 ```
 npm start
 ```
