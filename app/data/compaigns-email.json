@@ -20,11 +20,16 @@
   }],
   "emailItems": [{
     "icon": "glyphicon-th-list",
+    "iconTooltip": "Deeplink: https://www.dropbox.com/",
     "title": "Festival Fridays - Offer for VIPs",
-    "type": "Weekend Deals, Offers",
+    "types": ["Weekend Deals", "Offers"],
     "subType": "A/B",
-    "badge": "Scheduled",
-    "date": "20/08/2016",
+    "subTypeTooltip": "4 Variates",
+    "badge": {
+      "title": "Scheduled",
+      "color": "orange"
+    },
+    "date": "20th August",
     "name": "John Walker",
     "conversionRate": 10.5,
     "conversionNumber": "1204",

@@ -2,8 +2,8 @@
     <div class="overall-item-info email-item col-md-3" ng-repeat="overall in $ctrl.overalls">
         <div class="overall-title small inner">{{overall.title}}</div>
         <div class="overall-amount large inner">
-            <span class="black">{{overall.amount | number}}</span>
-            <span ng-show="{{!!overall.percentage}}">({{overall.percentage}})</span>
+            <span class="black">{{overall.amount | number}} </span>
+            <span ng-if="!!overall.percentage">({{overall.percentage}})</span>
         </div>
         <div class="increase small inner">
             <span class="glyphicon glyphicon-arrow-up green"></span>
@@ -23,42 +23,46 @@
     </button>
 </div>
 
-<div class="email-items">
+<div class="email-items row">
     <div class="email-item-info" ng-repeat="item in $ctrl.emailItems">
-        <input class="email-item-checkbox left" type="checkbox"/>
-        <div class="email-item-icon left">
-            <div class="email glyphicon glyphicon-envelope"></div>
-            <div class="binder"></div>
-            <div class="support-icon glyphicon {{item.icon}}"></div>
+        <div class="col-md-4">
+            <input class="email-item-checkbox left" type="checkbox"/>
+            <div class="email-item-icon left">
+                <div class="email glyphicon glyphicon-envelope"></div>
+                <div class="binder"></div>
+                <div class="support-icon glyphicon {{item.icon}}"  data-toggle="tooltip" class="sub-type" title="{{item.iconTooltip}}"></div>
+            </div>
+            <div class="main-info left">
+                <div class="title">
+                    <span class="black">{{item.title}}</span>
+                    <span class="glyphicon glyphicon-eye-open"></span>
+                </div>
+                <div class="types">
+                    <span class="type" ng-repeat="type in item.types">{{type}}<span ng-if="$index !== item.types.length-1">,</span></span>
+                </div>
+                <div class="details">
+                    <span data-toggle="tooltip" class="sub-type" title="{{item.subTypeTooltip}}"><span class="content">{{item.subType}}</span></span>
+                    <span class="badge {{item.badge.color}}">{{item.badge.title | uppercase}}</span>
+                    <span class="author">{{item.date | date}} - {{item.name}}</span>
+                </div>
+            </div>
         </div>
-        <div class="main-info left">
-            <div class="title">
-                {{item.title}}
-                <span class="glyphicon glyphicon-eye-open"></span>
-            </div>
-            <div class="type">
-                {{item.type}}
-            </div>
-            <div class="details">
-                <span data-toggle="tooltip" title="Tooltip on top">{{item.subType}}</span>
-                <span>{{item.badge | uppercase}}</span>
-                <span>{{item.date | date}} - {{item.name}}</span>
-            </div>
-        </div>
-        <div class="conversion-rate left">
+
+        <div class="conversion-rate left col-md-2">
             <div class="amount">{{item.conversionRate}}% ({{item.conversionNumber | number}})</div>
             <div>Conversion Rate</div>
         </div>
-        <div class="email-sends left">
+        <div class="email-sends lef col-md-2">
             <div class="amount">{{item.emailSends | number}}</div>
             <div>Email Sends</div>
         </div>
-        <div class="email-opens left">
+        <div class="email-opens left col-md-2">
             <div class="amount">{{item.emailOpens}}% ({{item.emailOpensNumber | number}})</div>
             <div>Email Opens</div>
         </div>
-        <div class="left">
+        <div class="left col-md-2">
             <custom-dropdown dropdown-data="$ctrl.emailItemsDropdown"></custom-dropdown>
         </div>
+        <div class="clear"></div>
     </div>
 </div>

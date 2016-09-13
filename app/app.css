@@ -13,8 +13,23 @@
     src: url(fonts/proximanova-bold-webfont.ttf);
 }
 
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: proximanovaFontBold;
+    margin: 0;
+}
+
+[data-toggle="tooltip"] {
+    cursor: pointer !important;
+}
+
+.row {
     margin: 0;
 }
 
@@ -23,12 +38,9 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3em;
     color: #99E072;
 }
-html,
-body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    overflow-x: hidden;
+
+.glyphicon {
+    top: 0;
 }
 
 .app {
@@ -45,6 +57,7 @@ header {
     height: 60px;
     color: #ffffff;
     min-width: 500px;
+    width: 100%;
     font-family: proximanovaFontSemiBold;
 }
 
@@ -108,11 +121,7 @@ header user-info .system-icons span.icon:hover {
 }
 
 .wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    padding-left: 240px;
 }
 
 .sidebar-wrapper {
@@ -131,10 +140,6 @@ header user-info .system-icons span.icon:hover {
     transition: all 0.5s ease;
 }
 
-.wrapper.toggled .sidebar-wrapper {
-    width: 240px;
-}
-
 .page-content-wrapper {
     left: 0;
     right: 0;
@@ -143,36 +148,12 @@ header user-info .system-icons span.icon:hover {
     bottom: 0;
 }
 
-.wrapper.toggled .page-content-wrapper {
-    position: absolute;
-    margin-right: -240px;
+.sidebar-wrapper {
+    width: 240px;
+    left: 240px;
 }
 
-@media(min-width:960px) {
-    .wrapper {
-        padding-left: 240px;
-    }
-
-    .wrapper.toggled {
-        padding-left: 0;
-    }
-
-    .sidebar-wrapper {
-        width: 240px;
-        left: 240px;
-    }
-
-    .wrapper.toggled .sidebar-wrapper {
-        width: 0;
-    }
-
-    .wrapper.toggled .page-content-wrapper {
-        position: relative;
-        margin-right: 0;
-    }
-
-    .page-content-wrapper {
-        left: 240px;
-    }
+.page-content-wrapper {
+    left: 240px;
 }
 
