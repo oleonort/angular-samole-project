@@ -84,13 +84,12 @@ compaigns-component compaigns-emails {
     font-family: proximanovaFontReg;
 }
 
-compaigns-emails .overalls,
-compaigns-emails .email-items {
+compaigns-emails .overalls {
     padding: 10px 20px;
     border-bottom: 2px solid #D0D5D8;
 }
 
-compaigns-emails .overalls .inner {
+compaigns-emails .inner {
     display: table;
     margin: 0 auto;
 }
@@ -117,7 +116,7 @@ compaigns-emails .email-items {
 }
 
 compaigns-emails .email-item {
-    padding: 0 20px 0 40px;
+    padding: 0 10px 0 10px;
     margin: 15px 0;
 }
 
@@ -125,6 +124,10 @@ compaigns-emails .overalls .overall-item-info {
     float: left;
     border-right: 1px solid #DDE1E5;
     line-height: 1.6em;
+}
+
+compaigns-emails .overalls .overall-item-info:last-child {
+    border-right: none;
 }
 
 compaigns-emails .action-menu {
@@ -173,7 +176,8 @@ compaigns-emails .action-menu .new-campaign span {
 }
 
 compaigns-emails .email-item-info {
-    margin: 10px;
+    padding: 20px 10px 20px 20px;
+    border-bottom: 2px solid #D0D5D8;
 }
 
 compaigns-emails .email-item-info .email-item-checkbox {
@@ -181,7 +185,7 @@ compaigns-emails .email-item-info .email-item-checkbox {
 }
 
 compaigns-emails .email-item-icon {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 compaigns-emails .email-item-icon .email,
@@ -207,12 +211,13 @@ compaigns-emails .main-info {
 }
 
 compaigns-emails .main-info .title span:first-child {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 compaigns-emails .main-info .type {
     color: #2A73D5;
     text-decoration: underline;
+    font-size: 12px;
     cursor: pointer;
     padding: 3px;
 }
@@ -247,8 +252,8 @@ compaigns-emails .main-info .details .sub-type .content {
 
 compaigns-emails .main-info .details .badge {
     display: inline-block;
-    margin-left: 10px;
-    padding: 4px 10px;
+    margin-left: 5px;
+    padding: 4px 5px;
     color: #FFFFFF;
     border-radius: 5px;
 }
@@ -274,5 +279,50 @@ compaigns-emails .main-info .details .badge.light-grey {
 }
 
 compaigns-emails .main-info .details .author {
-    margin-left: 10px;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+compaigns-emails .email-item-info .first-part {
+    border-right: 1px solid #DDE1E5;
+}
+
+compaigns-emails .email-item-info .second-part {
+    padding: 0;
+}
+
+compaigns-emails .email-item-info .second-part .conversion-rate,
+compaigns-emails .email-item-info .second-part .email-sends,
+compaigns-emails .email-item-info .second-part .email-opens {
+    border-right: 1px solid #DDE1E5;
+    padding: 22px 0 22px 15px;
+}
+
+compaigns-emails .email-item-info .third-part {
+    padding: 22px 0 22px 15px;
+}
+
+/*compaigns-emails .email-item-info .second-part .conversion-rate progress {*/
+    /*width: 70px;*/
+    /*height: 10px;*/
+    /*border: 2px solid #D0D5D8;*/
+    /*border-radius: 10px;*/
+/*}*/
+
+compaigns-emails .email-item-info .second-part .conversion-rate  progress[value] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70px;
+    height: 10px;
+}
+
+compaigns-emails .email-item-info .second-part .conversion-rate progress[value]::-webkit-progress-bar {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 2px solid #D0D5D8;
+}
+
+compaigns-emails .email-item-info .second-part .conversion-rate progress[value]::-webkit-progress-value {
+    border-radius: 10px 0 0 10px;
+    background-color: #404040;
 }

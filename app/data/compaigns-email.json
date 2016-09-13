@@ -36,6 +36,24 @@
     "emailSends": "14236",
     "emailOpens": 45.6,
     "emailOpensNumber": "6084"
+  }, {
+    "icon": "glyphicon-th-list",
+    "iconTooltip": "Deeplink: https://www.dropbox.com/",
+    "title": "Festival Fridays - Offer for VIPs",
+    "types": ["Weekend Deals", "Offers"],
+    "subType": "A/B",
+    "subTypeTooltip": "4 Variates",
+    "badge": {
+      "title": "Scheduled",
+      "color": "orange"
+    },
+    "date": "20th August",
+    "name": "John Walker",
+    "conversionRate": 10.5,
+    "conversionNumber": "1204",
+    "emailSends": "14236",
+    "emailOpens": 45.6,
+    "emailOpensNumber": "6084"
   }],
   "emailItemsDropdown": {
     "initValue": "Edit",

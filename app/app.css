@@ -18,6 +18,7 @@ body {
     padding: 0;
     margin: 0;
     height: 100%;
+    min-width: 1080px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -122,6 +123,10 @@ header user-info .system-icons span.icon:hover {
 
 .wrapper {
     padding-left: 240px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    bottom: 0;
 }
 
 .sidebar-wrapper {
@@ -129,7 +134,7 @@ header user-info .system-icons span.icon:hover {
     position: absolute;
     left: 0;
     width: 0;
-    top: 60px;
+    top: 0;
     bottom: 0;
     margin-left: -240px;
     background: #222228;
@@ -144,13 +149,16 @@ header user-info .system-icons span.icon:hover {
     left: 0;
     right: 0;
     position: absolute;
-    top: 60px;
-    bottom: 0;
+    height: 100%;
+    min-width: 840px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .sidebar-wrapper {
     width: 240px;
     left: 240px;
+    height: 100%;
 }
 
 .page-content-wrapper {
