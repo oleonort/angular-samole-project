@@ -17,5 +17,33 @@
     "title": "Overall Generated Revenues",
     "amount": "1234567.90",
     "precentageInLastWeek": "6.7%"
-  }]
+  }],
+  "emailItems": [{
+    "icon": "glyphicon-th-list",
+    "title": "Festival Fridays - Offer for VIPs",
+    "type": "Weekend Deals, Offers",
+    "subType": "A/B",
+    "badge": "Scheduled",
+    "date": "20/08/2016",
+    "name": "John Walker",
+    "conversionRate": 10.5,
+    "conversionNumber": "1204",
+    "emailSends": "14236",
+    "emailOpens": 45.6,
+    "emailOpensNumber": "6084"
+  }],
+  "emailItemsDropdown": {
+    "initValue": "Edit",
+    "items": [{
+      "title": "Edit"
+      }, {
+      "title": "Pause"
+      }, {
+      "title": "Stop"
+      }, {
+      "title": "Duplicate"
+      }, {
+      "title": "Edit CSV"
+    }]
+  }
 }

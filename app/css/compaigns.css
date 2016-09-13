@@ -1,3 +1,7 @@
+compaigns-component .left {
+    float: left;
+}
+
 compaigns-component .nav-tabs {
     padding: 20px 20px 0 20px;
     border-bottom: 2px solid #D0D5D8;
@@ -41,21 +45,24 @@ compaigns-component .nav-tabs > li a .tab-title {
     padding-top: 5px;
 }
 
-compaigns-component .nav-tabs > li a .tab-icon {
+compaigns-component .nav-tabs > li a .tab-icon,
+compaigns-emails .email-item-icon .email,
+compaigns-emails .email-item-icon .support-icon {
     float: left;
     height: 26px;
     width: 26px;
     background: #C9CED2;
     border-radius: 50%;
     text-align: center;
-    padding-top: 6px;
+    padding-top: 7px;
     margin-right: 5px;
-    font-size: 14px;
+    font-size: 12px;
     color: #ffffff;
 }
 
 compaigns-component .nav-tabs > li.active a .tab-icon,
-compaigns-component .nav-tabs > li a:hover .tab-icon {
+compaigns-component .nav-tabs > li a:hover .tab-icon,
+compaigns-emails .email-item-icon .email {
     background: #2A73D5;
 }
 
@@ -73,31 +80,41 @@ compaigns-component compaigns-emails {
     font-family: proximanovaFontReg;
 }
 
-compaigns-emails .overalls {
+compaigns-emails .overalls,
+compaigns-emails .email-items {
     padding: 10px 20px;
     border-bottom: 2px solid #D0D5D8;
 }
 
-compaigns-emails .overalls .small {
+compaigns-emails .overalls .inner {
+    display: table;
+    margin: 0 auto;
+}
+
+compaigns-emails .small {
     font-size: 12px;
 }
 
-compaigns-emails .overalls .large {
+compaigns-emails .large {
     font-size: 24px;
 }
 
-compaigns-emails .overalls .black {
+compaigns-emails .black {
     color: #404040;
 }
 
-compaigns-emails .overalls .green {
+compaigns-emails .green {
     color: #31BC55;
+}
+
+compaigns-emails .email-item,
+compaigns-emails .email-items {
+    color: #A6AEB3;
 }
 
 compaigns-emails .email-item {
     padding: 0 20px 0 40px;
     margin: 15px 0;
-    color: #A6AEB3;
 }
 
 compaigns-emails .overalls .overall-item-info {
@@ -146,3 +163,30 @@ compaigns-emails .action-menu .new-campaign {
     border-radius: 5px;
     background-color: #22A2ED;
 }
+
+compaigns-emails .email-item-info {
+    overflow: hidden;
+}
+
+compaigns-emails .email-item-info .email-item-checkbox {
+    margin: 22px 0 0 10px;
+}
+
+compaigns-emails .email-item-icon .email,
+compaigns-emails .email-item-icon .support-icon {
+    float: none;
+}
+
+compaigns-emails .email-item-icon .binder {
+    width: 5px;
+    height: 10px;
+    margin-left: 10px;
+    background: #BFD5F2;
+}
+
+compaigns-emails .email-item-icon .support-icon {
+    background: #BFD5F2;
+    margin-top: -1px;
+    color: #2A73D5;
+}
+
