@@ -124,7 +124,7 @@ compaigns-emails .action-menu .search {
     height: 40px;
     float: left;
     background: #FFFFFF;
-    margin: 13px 10px 0 20px;
+    margin: 13px 5px 0 20px;
     font-size: 18px;
     color: #404040;
 }
@@ -136,5 +136,5 @@ compaigns-emails .action-menu .search:before {
 }
 
 compaigns-emails custom-dropdown .dropdown {
-    margin-top: 14px;
+    margin: 14px 5px 0;
 }

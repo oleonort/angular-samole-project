@@ -1,5 +1,6 @@
 .dropdown {
     float: left;
+    font-family: proximanovaFontSemiBold;
 }
 
 .dropdown .btn-default {
