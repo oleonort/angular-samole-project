@@ -4,14 +4,14 @@ angular.module('myApp')
     .config(['$stateProvider', '$urlRouterProvider',
         function config($stateProvider, $urlRouterProvider) {
             $stateProvider
-                .state('not-ready-yet', {
-                    url: '/not-ready-yet',
-                    template: '<not-ready-yet></not-ready-yet>'
-                })
                 .state('compaigns', {
                     url: '/compaigns',
                     template: '<compaigns-component></compaigns-component>',
                     redirectTo: 'compaigns.email'
+                })
+                .state('not-ready-yet', {
+                    url: '/not-ready-yet',
+                    template: '<not-ready-yet></not-ready-yet>'
                 })
                 .state('compaigns.email', {
                     url: '/email',
@@ -30,6 +30,7 @@ angular.module('myApp')
                     template: '<not-ready-yet></not-ready-yet>'
                 });
 
+            $urlRouterProvider.when('', '/compaigns');
             $urlRouterProvider.otherwise('/not-ready-yet');
         }
     ]).run(['$rootScope', '$state', function ($rootScope, $state) {
