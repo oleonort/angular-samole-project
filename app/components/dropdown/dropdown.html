@@ -4,9 +4,15 @@
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
-        <li><a ng-repeat="item in $ctrl.dropdownData.items">
-            <span ng-show="{{!!item.badge}}" class="option-badge {{item.badge}}"></span>
-            <span class="option-title">{{item.title}}</span>
+        <li><a>All</a></li>
+        <li ng-repeat="item in $ctrl.dropdownData.items">
+            <a ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+            <div ng-if="!!item.badge" class="option-badge {{item.badge}}"></div>
+            <div class="option-title">{{item.title}}</div>
+            <div class="option-actions" ng-if="!!item.editable" ng-class="{hidden: !hover}">
+                <span class="glyphicon glyphicon-edit"></span>
+                <span class="glyphicon glyphicon-trash"></span>
+            </div>
         </a></li>
         <li ng-if="!!$ctrl.dropdownData.separatedItem" role="separator" class="divider"></li>
         <li ng-if="!!$ctrl.dropdownData.separatedItem"><a>{{$ctrl.dropdownData.separatedItem}}</a></li>

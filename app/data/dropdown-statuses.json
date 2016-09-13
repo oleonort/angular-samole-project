@@ -1,8 +1,6 @@
 {
   "initValue": "Statuses",
   "items": [{
-    "title": "All"
-  }, {
     "title": "Active",
     "badge": "lite-green"
   }, {
