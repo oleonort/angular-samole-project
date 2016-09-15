@@ -112,6 +112,7 @@
   ],
   "emailItemsDropdown": {
     "initValue": "Edit",
+    "specialDropdown": "true",
     "items": [
       {
         "title": "Edit"

@@ -1,10 +1,12 @@
-.dropdown {
+.dropdown,
+.special-dropdown {
     float: left;
     font-family: proximanovaFontSemiBold;
     color: #404040;
 }
 
-.dropdown .btn-default {
+.dropdown .btn-default,
+.special-dropdown .main-button {
     border: 2px solid #DBDFE4;
     color: #404040;
     width: 120px;
@@ -14,12 +16,20 @@
     font-family: proximanovaFontSemiBold;
 }
 
-.dropdown .btn-default .caret {
+.dropdown .btn-default .caret,
+.special-dropdown .btn-default .caret {
     float: right;
     margin: 7px 10px 0 0;
     border-top: 6px dashed;
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
+}
+
+.special-dropdown .secondary-button {
+    border: 2px solid #DBDFE4;
+    color: #404040;
+    padding: 10px 0 15px 10px;
+    border-left: 1px solid #DBDFE4;
 }
 
 .dropdown .option-title {
@@ -47,6 +57,12 @@
 .dropdown .option-badge.orange {
     background: #F4A34C;
 }
+
+.dropdown .dropdown-menu > li,
+.special-dropdown .dropdown-menu > li {
+    margin: 10px 0;
+}
+
 .dropdown .dropdown-menu > li a.first-item {
     color: #2A73D5;
 }
@@ -59,15 +75,19 @@
     background: #A6AEB3;
 }
 
-.dropdown .dropdown-menu > li > a {
-    padding: 6px 12px;
+.dropdown .dropdown-menu > li > a,
+.special-dropdown .dropdown-menu > li > a {
+    padding: 10px 12px;
     margin: 0 10px;
     cursor: pointer;
     overflow: hidden;
     min-width: 120px;
 }
 
-.dropdown .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+.dropdown .dropdown-menu > li > a:hover,
+.special-dropdown .dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.special-dropdown > li > a:focus {
     background-color: #2A73D5;
     border-radius: 5px;
     color: #FFFFFF;
@@ -96,7 +116,6 @@
     border-color: #2A73D5 !important;
 }
 
-
 .dropdown .dropdown-menu .create-new span {
     background-image: url(/icons/icons_x1/createnew_iconx1.png);
     width: 15px;
@@ -104,4 +123,34 @@
     display: inline-block;
     position: relative;
     top: 3px;
+}
+
+.special-dropdown .main-button {
+    width: 140px;
+}
+
+.special-dropdown .main-button:hover,
+.special-dropdown .main-button:focus {
+    background-color: #FFFFFF;
+}
+
+.special-dropdown .secondary-button:hover,
+.special-dropdown .secondary-button:focus,
+.special-dropdown.open .secondary-button {
+    color: #FFFFFF !important;
+    background: #2A73D5 !important;
+    border-color: #2A73D5 !important;
+    box-shadow: none;
+}
+
+.special-dropdown.open .main-button {
+    border-color: #2A73D5 !important;
+}
+
+.special-dropdown > .btn + .dropdown-toggle {
+    padding-left: 15px;
+}
+
+.special-dropdown .dropdown-menu {
+    width: 184px;
 }
