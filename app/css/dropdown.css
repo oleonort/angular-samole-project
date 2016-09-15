@@ -126,7 +126,7 @@
 }
 
 .special-dropdown .main-button {
-    width: 140px;
+    width: 120px;
 }
 
 .special-dropdown .main-button:hover,
@@ -152,5 +152,5 @@
 }
 
 .special-dropdown .dropdown-menu {
-    width: 184px;
+    width: 168px;
 }
