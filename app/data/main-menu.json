@@ -49,5 +49,38 @@
         "id": "location-statistics"
       }
     ]
+  },
+  {
+    "title": "analyze",
+    "items": [
+      {
+        "title": "Dashboard",
+        "id": "dashboard"
+      },
+      {
+        "title": "Usage",
+        "id": "usage"
+      },
+      {
+        "title": "Permissions",
+        "id": "permissions"
+      },
+      {
+        "title": "Locations",
+        "id": "locations"
+      },
+      {
+        "title": "Events",
+        "id": "events"
+      },
+      {
+        "title": "Retention",
+        "id": "retention"
+      },
+      {
+        "title": "Funnels",
+        "id": "funnels"
+      }
+    ]
   }
 ]

@@ -8,7 +8,7 @@
 
 .sidebar-nav .category {
     color: #ffffff;
-    border-bottom: 2px solid #656568;
+    border-bottom: 2px solid #39393E;
     padding: 10px 0;
 }
 
@@ -17,19 +17,22 @@
 }
 
 .sidebar-nav .category .category-title {
-    padding-left: 40px;
-    margin: 10px 0;
+    padding-left: 28px;
+    margin: 6px 0;
+    font-family: proximanovaFontSemiBold;
+    font-size: 13px;
 }
 
 .sidebar-nav .category ul.items {
     margin: 0;
-    padding: 0 18px;
-    font-family: proximanovaFontBold;
+    padding: 0 20px;
+    font-family: proximanovaFontSemiBold;
 }
 
 .sidebar-nav .category .item > a {
     color: #656568;
-    padding: 4px 20px;
+    padding: 4px 8px;
+    font-size: 13px;
 }
 
 .sidebar-nav .category .item > a:hover {
@@ -42,6 +45,10 @@
     background-color: #22A2ED;
     color: #ffffff;
     border-radius: 5px;
+}
+
+.sidebar-nav .nav-stacked > li + li {
+    margin-top: 0;
 }
 
 

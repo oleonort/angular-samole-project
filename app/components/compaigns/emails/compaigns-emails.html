@@ -1,13 +1,15 @@
 <div class="overalls row">
-    <div class="overall-item-info email-item col-md-3" ng-repeat="overall in $ctrl.overalls">
-        <div class="overall-title small inner">{{overall.title}}</div>
-        <div class="overall-amount large inner">
-            <span class="black">{{overall.amount}} </span>
-            <span ng-if="!!overall.percentage">({{overall.percentage}})</span>
-        </div>
-        <div class="increase small inner">
-            <span class="glyphicon glyphicon-arrow-up green"></span>
-            {{overall.precentageInLastWeek}} in last 7 Days
+    <div class="col-xs-3 inner overall-item-info"  ng-repeat="overall in $ctrl.overalls">
+        <div class=" email-item">
+            <div class="overall-title small">{{overall.title}}</div>
+            <div class="overall-amount large">
+                <span class="black">{{overall.amount}} </span>
+                <span ng-if="!!overall.percentage">({{overall.percentage}})</span>
+            </div>
+            <div class="increase small">
+                <span class="glyphicon glyphicon-arrow-up green"></span>
+                {{overall.precentageInLastWeek}} in last 7 Days
+            </div>
         </div>
     </div>
 </div>
@@ -18,7 +20,7 @@
     <custom-dropdown dropdown-data="$ctrl.groupDropdownData"></custom-dropdown>
     <custom-dropdown dropdown-data="$ctrl.statusesDropdownData"></custom-dropdown>
     <button type="button" class="btn btn-info new-campaign">
-        <span class="glyphicon glyphicon-plus"></span>
+        <span class="plus-icon"></span>
         New Campaign
     </button>
 </div>

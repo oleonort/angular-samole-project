@@ -13,6 +13,11 @@
     src: url(fonts/proximanova-bold-webfont.ttf);
 }
 
+@font-face {
+    font-family: proximanovaFontLight;
+    src: url(fonts/proximanova-light-webfont.ttf);
+}
+
 html,
 body {
     padding: 0;
@@ -55,50 +60,52 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     background: #2A73D5;
-    height: 60px;
+    height: 55px;
     color: #ffffff;
     min-width: 500px;
     width: 100%;
-    font-family: proximanovaFontSemiBold;
+    font-family: proximanovaFontReg;
 }
 
 header .logo {
     width: 110px;
-    height: 60px;
-    vertical-align: text-top;
-    margin-left: 30px;
+    height: 55px;
+    margin: 2px 0 0 32px;
 }
 
 header user-info {
     float: right;
-    min-width: 300px;
+    min-width: 250px;
     height: inherit;
     padding-top: 8px;
 }
 
 header user-info .user-icon {
     float: left;
-    height: 40px;
-    width: 40px;
+    height: 33px;
+    width: 33px;
     background: #B499DF;
     border-radius: 50%;
     text-align: center;
-    padding-top: 11px;
-    margin-right: 15px;
+    padding-top: 7px;
+    margin-right: 13px;
     font-size: 18px;
+    margin-top: 3px;
 }
 
 header user-info .user-info {
     float: left;
+    margin-top: 1px;
 }
 
 header user-info .user-name {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 header user-info .user-type {
     color: #97B3E6;
-    font-size: 16px;
+    margin-top: -2px;
+    font-size: 13px;
 }
 
 header user-info .user-type span {
@@ -111,20 +118,30 @@ header user-info .system-icons {
     cursor: pointer;
 }
 
-header user-info .system-icons span.icon {
-    font-size: 22px;
-    padding-left: 10px;
+header user-info .system-icons span {
+    display: inline-block;
 }
 
-header user-info .system-icons span.icon:hover {
-    color: #22A1EC;
+header user-info .system-icons span.arrow-icon {
+    background-image: url(icons/icons_x1/arrow_iconx1.png);
+    width: 18px;
+    height: 10px;
+    margin-left: 15px;
+    vertical-align: text-top;
+}
+
+header user-info .system-icons span.cog-icon {
+    background-image: url(icons/icons_x1/cog_iconx1.png);
+    width: 16px;
+    height: 16px;
+    margin-left: 15px;
 }
 
 .wrapper {
-    padding-left: 240px;
+    padding-left: 190px;
     position: absolute;
     width: 100%;
-    top: 60px;
+    top: 55px;
     bottom: 0;
 }
 
@@ -135,7 +152,7 @@ header user-info .system-icons span.icon:hover {
     width: 0;
     top: 0;
     bottom: 0;
-    margin-left: -240px;
+    margin-left: -190px;
     background: #222228;
     overflow-y: auto;
     -webkit-transition: all 0.5s ease;
@@ -149,18 +166,18 @@ header user-info .system-icons span.icon:hover {
     right: 0;
     position: absolute;
     height: 100%;
-    min-width: 840px;
+    min-width: 1000px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .sidebar-wrapper {
-    width: 240px;
-    left: 240px;
+    width: 190px;
+    left: 190px;
     height: 100%;
 }
 
 .page-content-wrapper {
-    left: 240px;
+    left: 190px;
 }
 

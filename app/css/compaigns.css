@@ -22,7 +22,7 @@ compaigns-component .nav-tabs > li {
 compaigns-component .nav-tabs > li a {
     color: #ADAEB0;
     display: inline-block;
-    padding: 7px 15px 1px;
+    padding: 10px 20px 3px;
 }
 
 compaigns-component .nav-tabs > li a:hover {
@@ -46,34 +46,64 @@ compaigns-component .nav-tabs > li.active > a:focus {
 
 compaigns-component .nav-tabs > li a .tab-title {
     float: left;
-    padding-top: 5px;
+    padding: 5px 0 0 5px;
+    font-size: 16px;
+    font-family: proximanovaFontReg;
+    margin-top: 2px;
 }
 
 compaigns-component .nav-tabs > li a .tab-icon,
 compaigns-emails .email-item-icon .email,
 compaigns-emails .email-item-icon .support-icon {
     float: left;
-    height: 36px;
-    width: 36px;
+    height: 33px;
+    width: 33px;
     background: #C9CED2;
     border-radius: 50%;
     text-align: center;
-    padding-top: 9px;
     margin-right: 5px;
+    padding-top: 8px;
     font-size: 18px;
     color: #ffffff;
+}
+
+compaigns-component .nav-tabs > li a .tab-icon .icon {
+    width: 15px;
+    height: 15px;
+    margin-left: 9px;
+}
+
+compaigns-component .nav-tabs > li a .tab-icon.in-app-notification {
+    padding-top: 9px;
+}
+
+compaigns-component .nav-tabs > li a .tab-icon.push-notification .icon {
+    background-image: url(/icons/icons_x1/push_white_iconx1.png);
+    margin-left: 10px;
+}
+
+compaigns-component .nav-tabs > li a .tab-icon.in-app-notification .icon {
+    background-image: url(/icons/icons_x1/inapp_white_iconx1.png);
+}
+
+compaigns-component .nav-tabs > li a .tab-icon.multi-channel .icon {
+    background-image: url(/icons/icons_x1/feed_white_iconx1.png);
+}
+
+compaigns-component .nav-tabs > li a .tab-icon.email .icon {
+    background-image: url(/icons/icons_x1/email_white_iconx1.png);
 }
 
 compaigns-component .nav-tabs > li.active a .tab-icon,
 compaigns-component .nav-tabs > li a:hover .tab-icon,
 compaigns-emails .email-item-icon .email {
-    background: #2A73D5;
+    background-color: #2A73D5;
 }
 
 compaigns-component .nav-tabs > li.active,
 compaigns-component .nav-tabs > li.active,
 compaigns-component .nav-tabs > li.active {
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-bottom: 2px solid transparent;
     margin-bottom: -2px;
 }
@@ -85,8 +115,8 @@ compaigns-component compaigns-emails {
 }
 
 compaigns-emails .overalls {
-    padding: 10px 20px;
-    border-bottom: 2px solid #D0D5D8;
+    padding: 10px 0 10px 20px;
+    border-bottom: 2px solid #DBDFE4;
 }
 
 compaigns-emails .inner {
@@ -99,7 +129,7 @@ compaigns-emails .small {
 }
 
 compaigns-emails .large {
-    font-size: 24px;
+    font-size: 26px;
 }
 
 compaigns-emails .black {
@@ -110,29 +140,32 @@ compaigns-emails .green {
     color: #31BC55;
 }
 
+
 compaigns-emails .email-item,
 compaigns-emails .email-items {
     color: #A6AEB3;
 }
 
 compaigns-emails .email-item {
-    padding: 0 10px 0 10px;
+    padding-right: 15%;
     margin: 15px 0;
+    display: inline-block;
+    float: right;
+    border-right: 1px solid #DBDFE4;
+    line-height: 1.8em;
 }
 
-compaigns-emails .overalls .overall-item-info {
-    float: left;
-    border-right: 1px solid #DDE1E5;
-    line-height: 1.6em;
-}
-
-compaigns-emails .overalls .overall-item-info:last-child {
+compaigns-emails .overall-item-info:last-child .email-item {
     border-right: none;
+}
+
+compaigns-emails .overall-item-info:nth-child(2) .email-item {
+    padding-right: 33%;
 }
 
 compaigns-emails .action-menu {
     background: #F4F5F7;
-    border-bottom: 2px solid #D0D5D8;
+    border-bottom: 2px solid #DBDFE4;
     height: 70px;
 }
 
@@ -143,20 +176,21 @@ compaigns-emails .action-menu .main-checkbox {
 
 compaigns-emails .action-menu .search {
     border-radius: 4px;
-    border: 2px solid #D0D5D8;
-    width: 40px;
-    height: 40px;
+    border: 2px solid #DBDFE4;
+    width: 42px;
+    height: 42px;
     float: left;
     background: #FFFFFF;
     margin: 13px 5px 0 20px;
     font-size: 18px;
     color: #404040;
+    border-radius: 6px;
 }
 
 compaigns-emails .action-menu .search:before {
     position: absolute;
-    top: 8px;
-    left: 7px;
+    top: 9px;
+    left: 8px;
 }
 
 compaigns-emails .action-menu custom-dropdown .dropdown {
@@ -164,7 +198,7 @@ compaigns-emails .action-menu custom-dropdown .dropdown {
 }
 
 compaigns-emails .action-menu .new-campaign {
-    height: 40px;
+    height: 42px;
     float: right;
     margin: 13px 30px 0 0;
     border-radius: 5px;
@@ -172,7 +206,12 @@ compaigns-emails .action-menu .new-campaign {
 }
 
 compaigns-emails .action-menu .new-campaign span {
-    top: 2px;
+    background-image: url(/icons/icons_x1/createnew_iconx1.png);
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
 }
 
 compaigns-emails .email-item-info {
@@ -198,11 +237,11 @@ compaigns-emails .email-item-icon .binder {
     width: 5px;
     height: 12px;
     margin-left: 15px;
-    background: #BFD5F2;
+    background-color: #BFD5F2;
 }
 
 compaigns-emails .email-item-icon .support-icon {
-    background: #BFD5F2;
+    background-color: #BFD5F2;
     color: #2A73D5;
 }
 
@@ -235,7 +274,7 @@ compaigns-emails .main-info .details .sub-type {
     height: 21px;
     width: 21px;
     display: inline-block;
-    background: #A6AEB3;
+    background-color: #A6AEB3;
     border-radius: 50%;
     color: #FFFFFF;
     font-size: 12px;
@@ -260,23 +299,23 @@ compaigns-emails .main-info .details .badge {
 }
 
 compaigns-emails .main-info .details .badge.light-green {
-    background: #2AD59F;
+    background-color: #2AD59F;
 }
 
 compaigns-emails .main-info .details .badge.blue {
-    background: #2A73D5;
+    background-color: #2A73D5;
 }
 
 compaigns-emails .main-info .details .badge.orange {
-    background: #F4A34C;
+    background-color: #F4A34C;
 }
 
 compaigns-emails .main-info .details .badge.light-red {
-    background: #F44C70;
+    background-color: #F44C70;
 }
 
 compaigns-emails .main-info .details .badge.light-grey {
-    background: #A6AEB3;
+    background-color: #A6AEB3;
 }
 
 compaigns-emails .main-info .details .author {
