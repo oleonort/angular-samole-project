@@ -108,6 +108,23 @@
       "emailSends": "14236",
       "emailOpens": 45.6,
       "emailOpensNumber": "6084"
+    },
+    {
+      "icon": "deeplink",
+      "iconTooltip": "Deeplink: https://www.dropbox.com/",
+      "title": "Helmets Range (based on..",
+      "types": [
+        "Weekend Deals",
+        "Offers"
+      ],
+      "badge": {
+        "title": "paused",
+        "color": "light-red"
+      },
+      "date": "2nd July",
+      "name": "Phelim O Brien",
+      "conversionNumber": "1204",
+      "emailSends": "14236"
     }
   ],
   "emailItemsDropdown": {
