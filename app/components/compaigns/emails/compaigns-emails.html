@@ -1,6 +1,6 @@
 <div class="overalls row">
-    <div class="col-xs-3 inner overall-item-info"  ng-repeat="overall in $ctrl.overalls">
-        <div class=" email-item">
+    <div class="col-xs-3  overall-item-info"  ng-repeat="overall in $ctrl.overalls">
+        <div class=" email-item inner">
             <div class="overall-title small">{{overall.title}}</div>
             <div class="overall-amount large">
                 <span class="black">{{overall.amount}} </span>
@@ -17,8 +17,8 @@
 <div class="action-menu">
     <input class="main-checkbox" type="checkbox"/>
     <div class="search glyphicon glyphicon-search"></div>
-    <custom-dropdown dropdown-data="$ctrl.groupDropdownData"></custom-dropdown>
-    <custom-dropdown dropdown-data="$ctrl.statusesDropdownData"></custom-dropdown>
+    <custom-dropdown dropdown-data="$ctrl.groupDropdownData" class="group-dropdown"></custom-dropdown>
+    <custom-dropdown dropdown-data="$ctrl.statusesDropdownData" class="status-dropdown"></custom-dropdown>
     <button type="button" class="btn btn-info new-campaign">
         <span class="plus-icon"></span>
         New Campaign
@@ -30,10 +30,10 @@
         <div class="col-xs-6 first-part">
             <input class="email-item-checkbox left" type="checkbox"/>
             <div class="email-item-icon left">
-                <div class="email glyphicon glyphicon-envelope"></div>
+                <div class="email"><div class="icon-holder email-icon"></div></div>
                 <div class="binder"></div>
-                <div class="support-icon glyphicon {{item.icon}}" data-toggle="tooltip" class="sub-type"
-                     title="{{item.iconTooltip}}"></div>
+                <div class="support-icon" data-toggle="tooltip" class="sub-type"
+                     title="{{item.iconTooltip}}"><div class="icon-holder {{item.icon}}"></div></div>
             </div>
             <div class="main-info left">
                 <div class="title">

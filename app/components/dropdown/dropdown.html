@@ -5,7 +5,7 @@
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
-        <li><a>All</a></li>
+        <li><a class="first-item">All</a></li>
         <li ng-repeat="item in $ctrl.dropdownData.items">
             <a ng-mouseenter="hover = true" ng-mouseleave="hover = false">
             <div ng-if="!!item.badge" class="option-badge {{item.badge}}"></div>
@@ -16,6 +16,6 @@
             </div>
         </a></li>
         <li ng-if="!!$ctrl.dropdownData.separatedItem" role="separator" class="divider"></li>
-        <li ng-if="!!$ctrl.dropdownData.separatedItem"><a>{{$ctrl.dropdownData.separatedItem}}</a></li>
+        <li ng-if="!!$ctrl.dropdownData.separatedItem" class="create-new"><a><span class="plus-icon"></span> {{$ctrl.dropdownData.separatedItem}}</a></li>
     </ul>
 </div>

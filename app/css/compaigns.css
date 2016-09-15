@@ -67,13 +67,15 @@ compaigns-emails .email-item-icon .support-icon {
     color: #ffffff;
 }
 
-compaigns-component .nav-tabs > li a .tab-icon .icon {
+compaigns-component .nav-tabs > li a .tab-icon .icon,
+compaigns-emails .email-item-icon .email .icon-holder.email-icon {
     width: 15px;
     height: 15px;
     margin-left: 9px;
 }
 
-compaigns-component .nav-tabs > li a .tab-icon.in-app-notification {
+compaigns-component .nav-tabs > li a .tab-icon.in-app-notification,
+compaigns-emails .email-item-icon .email .icon-holder.email-icon {
     padding-top: 9px;
 }
 
@@ -90,7 +92,8 @@ compaigns-component .nav-tabs > li a .tab-icon.multi-channel .icon {
     background-image: url(/icons/icons_x1/feed_white_iconx1.png);
 }
 
-compaigns-component .nav-tabs > li a .tab-icon.email .icon {
+compaigns-component .nav-tabs > li a .tab-icon.email .icon,
+compaigns-emails .email-item-icon .email .icon-holder.email-icon {
     background-image: url(/icons/icons_x1/email_white_iconx1.png);
 }
 
@@ -115,7 +118,7 @@ compaigns-component compaigns-emails {
 }
 
 compaigns-emails .overalls {
-    padding: 10px 0 10px 20px;
+    padding: 30px 20px;
     border-bottom: 2px solid #DBDFE4;
 }
 
@@ -140,27 +143,21 @@ compaigns-emails .green {
     color: #31BC55;
 }
 
-
 compaigns-emails .email-item,
 compaigns-emails .email-items {
     color: #A6AEB3;
 }
 
 compaigns-emails .email-item {
-    padding-right: 15%;
-    margin: 15px 0;
-    display: inline-block;
-    float: right;
-    border-right: 1px solid #DBDFE4;
     line-height: 1.8em;
 }
 
-compaigns-emails .overall-item-info:last-child .email-item {
-    border-right: none;
+compaigns-emails .overall-item-info {
+    border-right: 1px solid #DBDFE4;
 }
 
-compaigns-emails .overall-item-info:nth-child(2) .email-item {
-    padding-right: 33%;
+compaigns-emails .overall-item-info:last-child {
+    border-right: none;
 }
 
 compaigns-emails .action-menu {
@@ -215,9 +212,9 @@ compaigns-emails .action-menu .new-campaign span {
 }
 
 compaigns-emails .email-item-info {
-    padding: 20px 10px 20px 20px;
+    padding: 30px 10px 30px 20px;
     border-bottom: 2px solid #D0D5D8;
-    height: 126px;
+    height: 137px;
 }
 
 compaigns-emails .email-item-info .email-item-checkbox {
@@ -225,7 +222,7 @@ compaigns-emails .email-item-info .email-item-checkbox {
 }
 
 compaigns-emails .email-item-icon {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 compaigns-emails .email-item-icon .email,
@@ -242,11 +239,32 @@ compaigns-emails .email-item-icon .binder {
 
 compaigns-emails .email-item-icon .support-icon {
     background-color: #BFD5F2;
-    color: #2A73D5;
+    padding-top: 9px;
+}
+
+compaigns-emails .email-item-icon .support-icon .icon-holder {
+    margin-left: 9px;
+    width: 15px;
+    height: 15px;
+}
+
+compaigns-emails .email-item-icon .support-icon .icon-holder.deeplink {
+    background-image: url(/icons/icons_x1/deeplink_blue_iconx1.png);
+}
+
+compaigns-emails .email-item-icon .support-icon .icon-holder.card {
+    background-image: url(/icons/icons_x1/card_blue_iconx1.png);
+}
+
+compaigns-emails .email-item-icon .support-icon .icon-holder.www {
+    background-image: url(/icons/icons_x1/www_blue_iconx1.png);
+    background-size: 28px 15px;
+    margin-left: 2px;
+    width: 27px;
 }
 
 compaigns-emails .main-info {
-    margin: 5px 0 0 15px;
+    margin: 1px 0 0 15px;
     font-family: proximanovaFontSemiBold;
 }
 
@@ -260,6 +278,10 @@ compaigns-emails .main-info .type {
     font-size: 12px;
     cursor: pointer;
     padding: 3px;
+}
+
+compaigns-emails .group-dropdown .dropdown ul {
+    min-width: 180px;
 }
 
 compaigns-emails .main-info .type:first-child {
@@ -293,7 +315,7 @@ compaigns-emails .main-info .details .sub-type .content {
 compaigns-emails .main-info .details .badge {
     display: inline-block;
     margin-left: 5px;
-    padding: 4px 5px;
+    padding: 4px 10px;
     color: #FFFFFF;
     border-radius: 5px;
 }
@@ -325,6 +347,7 @@ compaigns-emails .main-info .details .author {
 
 compaigns-emails .email-item-info .first-part {
     border-right: 1px solid #DDE1E5;
+    padding-left: 10px;
 }
 
 compaigns-emails .email-item-info .second-part {

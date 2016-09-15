@@ -25,7 +25,7 @@
   ],
   "emailItems": [
     {
-      "icon": "glyphicon-th-list",
+      "icon": "deeplink",
       "iconTooltip": "Deeplink: https://www.dropbox.com/",
       "title": "Festival Fridays - Offer for VIPs",
       "types": [
@@ -45,7 +45,7 @@
       "emailOpensNumber": "6084"
     },
     {
-      "icon": "glyphicon-floppy-save",
+      "icon": "card",
       "iconTooltip": "Deeplink: https://www.dropbox.com/",
       "title": "Nearby Offer - 15% off",
       "types": [
@@ -68,7 +68,7 @@
       "emailOpensNumber": "6084"
     },
     {
-      "icon": "glyphicon-shopping-cart",
+      "icon": "www",
       "iconTooltip": "Deeplink: https://www.dropbox.com/",
       "title": "New Product Promotion",
       "types": [
@@ -89,7 +89,7 @@
       "emailOpensNumber": "6084"
     },
     {
-      "icon": "glyphicon-comment",
+      "icon": "www",
       "iconTooltip": "Deeplink: https://www.dropbox.com/",
       "title": "Invite a friend",
       "types": [

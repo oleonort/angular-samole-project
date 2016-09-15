@@ -1,6 +1,6 @@
 .dropdown {
     float: left;
-    font-family: proximanovaFontBold;
+    font-family: proximanovaFontSemiBold;
     color: #404040;
 }
 
@@ -47,6 +47,9 @@
 .dropdown .option-badge.orange {
     background: #F4A34C;
 }
+.dropdown .dropdown-menu > li a.first-item {
+    color: #2A73D5;
+}
 
 .dropdown .option-badge.light-red {
     background: #F44C70;
@@ -61,7 +64,7 @@
     margin: 0 10px;
     cursor: pointer;
     overflow: hidden;
-    min-width: 180px;
+    min-width: 120px;
 }
 
 .dropdown .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
@@ -91,4 +94,14 @@
     background: #FFFFFF !important;
     color: #2A73D5 !important;
     border-color: #2A73D5 !important;
+}
+
+
+.dropdown .dropdown-menu .create-new span {
+    background-image: url(/icons/icons_x1/createnew_iconx1.png);
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    position: relative;
+    top: 3px;
 }
