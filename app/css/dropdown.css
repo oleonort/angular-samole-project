@@ -126,7 +126,7 @@
 }
 
 .special-dropdown .main-button {
-    width: 120px;
+    width: 140px;
 }
 
 .special-dropdown .main-button:hover,
@@ -152,5 +152,32 @@
 }
 
 .special-dropdown .dropdown-menu {
-    width: 168px;
+    width: 184px;
+}
+
+@media (max-width:1480px) {
+    .special-dropdown .main-button {
+        width: 120px;
+    }
+
+    .special-dropdown > .btn + .dropdown-toggle {
+        padding-left: 10px;
+        padding-right: 4px;
+    }
+
+    .special-dropdown .dropdown-menu {
+        width: 160px;
+    }
+}
+
+@media (max-width:1380px) {
+    .special-dropdown > .btn + .dropdown-toggle {
+        padding-left: 8px;
+        padding-right: 0;
+    }
+
+    .special-dropdown .dropdown-menu {
+        width: 151px;
+        min-width: 151px;
+    }
 }
