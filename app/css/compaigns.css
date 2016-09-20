@@ -280,8 +280,16 @@ compaigns-emails .main-info .type {
     padding: 3px;
 }
 
+compaigns-emails .status-dropdown .dropdown-menu {
+    padding-bottom: 10px;
+}
+
+compaigns-emails .status-dropdown .dropdown-menu > li > a  {
+    padding-left: 10px;
+}
+
 compaigns-emails .group-dropdown .dropdown ul {
-    min-width: 180px;
+    min-width: 200px;
 }
 
 compaigns-emails .main-info .type:first-child {
@@ -348,6 +356,7 @@ compaigns-emails .main-info .details .author {
 compaigns-emails .email-item-info .first-part {
     border-right: 1px solid #DDE1E5;
     padding-left: 10px;
+    height: 84px;
 }
 
 compaigns-emails .email-item-info .second-part {
@@ -359,7 +368,7 @@ compaigns-emails .email-item-info .second-part .email-sends,
 compaigns-emails .email-item-info .second-part .email-opens {
     border-right: 1px solid #DDE1E5;
     height: 84px;
-    padding-top: 10px;
+    padding-top: 12px;
     line-height: 1.3em;
 }
 
